@@ -1,4 +1,4 @@
-import { useState,useEffect, use } from "react";
+import { useState,useEffect,  } from "react";
 
 function FoodOrder() {
     const [offers,setoffers] = useState([]);
@@ -8,12 +8,10 @@ function FoodOrder() {
     useEffect(() => {
         setoffers(["50% off", "Buy 1 Get 1 Free", "Free Delivery"]);
     }, []);
-    useEffect(( )=>{
+    useEffect(() => {
         console.log("Fetching restaurants for", location);
-        setRestaurants(['$location] Pizza point','${location} Biryani House']);
-
-
-    },[location]);
+        setRestaurants([`${location} Pizza Point`, `${location} Biryani House`]);
+    }, [location]);
 
     // cleanup
     useEffect(() => {
@@ -41,4 +39,5 @@ function FoodOrder() {
   );
 }
 
-export default FoodDeliveryApp;
+
+export default FoodOrder;
