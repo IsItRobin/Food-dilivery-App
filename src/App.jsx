@@ -24,7 +24,7 @@ function FoodOrder() {
 
    return (
     <div>
-      <h1>Practise to Showcase usecontext</h1>
+      <h1>Practise to Showcase Useeffect </h1>
       <h2>🔥 Offers: {offers.join(", ")}</h2>
       <h3>📍 Location: {location}</h3>
       <button onClick={() => setLocation("Mumbai")}>Go to Mumbai</button>
